@@ -1,0 +1,13 @@
+services:
+    gemini-discord-bot:
+        build: . # Tells Docker Compose to build the image using the Dockerfile in the current directory
+        working_dir: /app
+        volumes:
+            - .:/app # Mount the local repository directory into the container
+            - /app/node_modules
+        env_file:
+            - .env # Load environment variables from your local .env file
+        environment:
+            - NODE_ENV=production # Set Node environment to production (optional)
+        command: npm start
+        restart: unless-stopped
