@@ -1,6 +1,6 @@
 # Gemini Discord Bot
 
-Gemini Discord Bot runs in docker for convienance, and is currently tested to be compatible with gemini-2.0-flash-exp for text responses.
+Gemini Discord Bot runs in docker for convenience, and is currently tested to be compatible with gemini-2.0-flash-exp for text responses.
 
 ## Features
 
